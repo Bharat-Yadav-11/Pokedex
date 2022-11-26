@@ -36,7 +36,7 @@
 <div class="u-clearfix u-sheet u-sheet-1">
   <div class="u-border-2 u-border-grey-dark-1 u-container-style u-group u-radius-10 u-shape-round u-white u-group-1">
     <div class="u-container-layout u-container-layout-1">
-      <img class="u-expanded-height-md u-expanded-height-sm u-expanded-height-xs u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="{{link}}" alt="" data-image-width="50" data-image-height="46">
+      <img class="u-expanded-height-md u-expanded-height-sm u-expanded-height-xs u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src={{link}} alt="" data-image-width="50" data-image-height="46">
       <p class="u-align-center u-text u-text-default u-text-1">
         <span class="u-text-grey-90">{{name.upper()}}&nbsp;</span>
         <span class="u-text-grey-60">#{{id}}</span>
@@ -44,26 +44,30 @@
     </div>
   </div>
   <img class="u-align-center u-image u-image-round u-preserve-proportions u-image-2" src="https://cdn.projectrexa.ml/sprites/{{name}}.png" alt="">
-<p class="u-align-center-xs u-text u-text-2"><br>"{{description}}"</p>
   <div class="u-container-style u-custom-color-3 u-group u-radius-10 u-shape-round u-group-2">
     <div class="u-container-layout u-container-layout-2">
       <img class="u-image u-image-circle u-image-3" src="https://cdn.projectrexa.ml/project/{{type_2}}.png" alt="">
       <img class="u-image u-image-circle u-preserve-proportions u-image-4" src="https://cdn.projectrexa.ml/project/{{type_1}}.png" alt="">
-      <p class="u-text u-text-default u-text-3">Ty​pe&nbsp; -</p>
-      <p class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-4">Heig​ht - <span style="font-weight: 700;">{{height}}&nbsp;</span>m
+      <p class="u-text u-text-default u-text-2">Ty​pe&nbsp; -</p>
+      <p class="u-align-center u-text u-text-default-lg u-text-default-xl u-text-3">Heig​ht - <span style="font-weight: 700;">{{height}}&nbsp;</span>m
       </p>
-      <p class="u-align-center-md u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-xl u-text u-text-default-lg u-text-default-xl u-text-5">Weight - <b>{{weight/10}}</b>&nbsp;kg
+      <p class="u-align-center-md u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-xl u-text u-text-default-lg u-text-default-xl u-text-4">Weight - <b>{{weight/10}}</b>&nbsp;kg
       </p>
     </div>
   </div>
-  <img class="u-image u-image-circle u-preserve-proportions u-image-5" src="https://cdn.projectrexa.ml/project/right.webp" alt="" data-image-width="128" data-image-height="128" data-href="/pokemon?search={{id+1}}">
-  <img class="u-image u-image-circle u-preserve-proportions u-image-6" src="https://cdn.projectrexa.ml/project/left.webp" alt="" data-image-width="128" data-image-height="128" data-href="/pokemon?search={{id-1}}">
+  <img class="u-image u-image-circle u-preserve-proportions u-image-5" src="https://cdn.projectrexa.ml/project/left.webp" alt="" data-image-width="128" data-image-height="128" data-href="/pokemon?search={{id-1}}">
+  <img class="u-image u-image-circle u-preserve-proportions u-image-6" src="https://cdn.projectrexa.ml/project/right.webp" alt="" data-image-width="128" data-image-height="128" data-href="/pokemon?search={{id+1}}">
+  <div class="u-black u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-3">
+    <div class="u-container-layout u-container-layout-3">
+      <p class="u-align-center u-text u-text-5">{{description}}</p>
+    </div>
+  </div>
   <div class="u-clearfix u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
     <div class="u-layout">
       <div class="u-layout-row">
         <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
-          <div class="u-container-layout u-container-layout-3">
-            <div class="u-clearfix u-custom-html u-custom-html-1">
+          <div class="u-container-layout u-container-layout-4">
+            <div class="u-clearfix u-custom-html u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-custom-html-1">
               <label><b>HP - {{hp}} <meter value="{{hp}}" min="0" low="50" high="130" max="200" optimum="20"></meter></b>
               </label><b>
                 <label> Speed - {{speed}} <meter value="{{speed}}" min="0" low="50" high="130" max="200" optimum="20"> 80/200 </meter>
@@ -84,11 +88,15 @@
   </div>
   <p class="u-align-center u-text u-text-6">The Project was last update for the game "<a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Legends:_Arceus" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Legends Arceus</a>"<br>
     <a href="https://projectrexa.ml/blogs/making-a-pokedex" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Check out the blog on the project&nbsp;</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </p>
-  <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
 </div>
 </section>
-
 <footer class="u-align-center u-clearfix u-footer u-grey-60 u-footer" id="sec-3328"><div class="u-clearfix u-sheet u-sheet-1">
   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1">Pokémon, Pikachu and all other Pokémon characters © 1995-2022 Nintendo, GAME FREAK and Creatures, Inc.&nbsp;<br>&nbsp;No infringement is intended.<br>
     <br> © ProjectRexa<br>Source Code
