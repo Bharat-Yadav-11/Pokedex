@@ -18,7 +18,7 @@ def pokemon():
             id = "1"
         else:
             id = request.args.get('search').lower()
-        data = (requests.get(f"https://api.projectrexa.ml/pokemon?key=sPapduXVTZWt9OU84LWNp2yphPn6kDsXDBe1RGBJ&query={id}").json()) 
+        data = (requests.get(f"https://api.projectrexa.ml/pokemon?key=Wqccm_WrbLkuRxpe-InFHo_cwuVWzEszyX0t2_vJ&query={id}").json()) 
         name=data["name"]
         if data["secondary_type"] == None:
             secondary = "blank"
