@@ -19,7 +19,7 @@ def pokemon():
                 print("Numeric")
                 if id < "1" or id > "905":
                     id = "1"
-        data = (requests.get(f"https://api.projectrexa.ml/pokeapi/{id}").json()) 
+        data = (requests.get(f"https://api.pokemon.project.projectrexa.dedyn.io/pokeapi/{id}").json()) 
         name=data["name"]
         if data["secondary_type"] == None:
             secondary = "null"
