@@ -29,7 +29,7 @@ def pokemon():
         if (requests.get(f"https://img.pokemondb.net/sprites/black-white/anim/normal/{name}.gif").status_code) == 200:
             link = f"https://img.pokemondb.net/sprites/black-white/anim/normal/{name}.gif"
         else:
-            link = f"https://raw.githubusercontent.com/Om-Mishra7/pokeapi_sprites/master/sprites/{name}.png"
+            link = f"https://cdn.projectrexa.dedyn.io/pokemon/sprites/{name}.png"
  
         return render_template("dex.html",link = link, name=data["name"],id=data["id"],type_1=data["primary_type"],type_2=secondary,description=data["description"],height=data["height"],weight=data["weight"],hp=data["hp"],attack=data["attack"],defence=data["defence"],special_attack=data["special_attack"],special_defence=data["special_defence"],speed=data["speed"])
     except Exception as e:     
