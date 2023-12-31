@@ -21,7 +21,7 @@ def pokemon():
                 print("Numeric")
                 if id < "1" or id > "905":
                     id = "1"
-        data = requests.get(f"https://api.pokemon.project.projectrexa.dedyn.io/pokeapi/{id}", headers=AUTH_HEADER)
+        response = requests.get(f"https://api.pokemon.project.projectrexa.dedyn.io/pokeapi/{id}", headers=AUTH_HEADER)
         data = response.json()
 
         print(data)
