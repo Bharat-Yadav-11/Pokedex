@@ -24,6 +24,8 @@ def pokemon():
         data = requests.get(f"https://api.pokemon.project.projectrexa.dedyn.io/pokeapi/{id}", headers=AUTH_HEADER)
         data = response.json()
 
+        print(data)
+
         name=data["name"]
         if data["secondary_type"] == None:
             secondary = "null"
