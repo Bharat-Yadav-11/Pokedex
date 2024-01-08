@@ -17,7 +17,6 @@ def pokemon():
         else:
             id = request.args.get("search").lower()
             if id.isnumeric():
-                print("Numeric")
                 if id < "1" or id > "905":
                     id = "1"
         response = requests.get(
