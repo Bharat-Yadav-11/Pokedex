@@ -12,13 +12,17 @@ AUTH_HEADER = {"Authorization": "622BEB8354BCDC1C94E1B5B414C66"}
 @app.route("/")
 def pokemon():
     try:
-        if request.args.get("search") == None:
-            id = "1"
+         # Set default ID to 1
+        id = request.args.get("search", "1").lower()
+        
+        # Check if the ID is numeric and within the range
+        if id.isnumeric():
+            id_num = int(id)
+            if id_num < 1 or id_num > 1025:
+                return "Not Found"  # Return "Not Found" for out-of-range numbers
         else:
-            id = request.args.get("search").lower()
-            if id.isnumeric():
-                if id < "1" or id > "905":
-                    id = "1"
+            return "Write the Vaild ID"  # Return "Write the Valid ID" for non-numeric input
+            
         response = requests.get(
             f"https://api.pokemon.project.projectrexa.dedyn.io/pokeapi/{id}",
             headers=AUTH_HEADER,
