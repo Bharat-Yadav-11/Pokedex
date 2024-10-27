@@ -17,7 +17,7 @@ def pokemon():
         
         # Check if the ID is numeric and within the range
         if id.isnumeric():
-            id_num = int(id)
+            id_num = int(id)  # Convert to integer for comparison
             if id_num < 1 or id_num > 1025:
                 return "Not Found"  # Return "Not Found" for out-of-range numbers
         else:
